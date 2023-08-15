@@ -1,0 +1,291 @@
+
+/* import fonts from fobts.css file*/
+@import url(./fonts.css);
+
+/* css variables */ 
+@import url(./partials/_variable.css);
+/* import Global styling*/
+
+@import url(/css/_global.css);
+
+/* start navigation */
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0.2rem 0.5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.logo-img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.header_area .main-menu .navbar-nav .nav-item .nav-link {
+    font:normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+
+.header_area .main-menu .navbar-nav .nav-item.active .nav-link {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav .nav-item .nav-link:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end navigation */
+
+
+/* Banner Area */ 
+
+/* Banner Area */ 
+
+.site-main .site-banner {
+    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.6rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+
+
+/* End Banner Area */ 
+
+/* Start About Area */ 
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+/* End About Area */ 
+
+
+
+
+/* Front-end Area */
+.front-end-area {
+    padding: 80px 0;
+  }
+  
+  .front-end-area .row {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .front-end-area .about-title {
+    text-align: center;
+    padding: 0 40px;
+  }
+  
+  .front-end-area h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .front-end-area h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .front-end-area .paragraph {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .front-end-area .about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  @media (max-width: 767px) {
+    .front-end-area .about-title {
+      padding-right: 0;
+      padding-bottom: 30px;
+    }
+  }
+  
+
+  /* Services Area */
+
+
+  .site-main .services-area{
+    padding: 7rem 2rem;
+  }
+
+  .site-main .services-area .services-title{
+    padding: 0.14;
+  }
+  .site-main .services-area .services-title h1{
+    font-size: 35px;
+  }
+.site-main > .services-area .services{
+    background: rgba(248,  252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);  
+
+}
+
+  /* End service Area */
+  
+
+  /* project Area */ 
+
+.site-main .project-area{
+  padding: 4rem 0;
+}
+.site-main .project-area .button-group button{
+  background: transparent;
+  border: none;
+  font: normal 500 16px/130px var(--roboto);
+  text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+  padding-left: 3rem;
+}
+  
+.site-main .project-area .grid .our-project > .title h4{
+  font: normal 700 25px/12px var(--roboto);
+}
+
+/* About Me */
+
+/* Fix for padding in about-title paragraph */
+.site-main .about-area .about-title p {
+  padding: 1rem 0; /* Adjust the padding values as needed */
+}
+
+/* Fix for client card background and box-shadow */
+.site-main .about-area .client {
+  background: #ffffff; /* Set the background color as desired */
+  box-shadow: var(--box-shadow); /* Assuming --box-shadow is defined elsewhere */
+  margin: 3rem 0;
+}
+
+/* Fix for padding in about-professor */
+.site-main .about-area .client .about-professor {
+  padding-top: 2rem;
+}
+
+/* Fix for font styles in about-professor */
+.site-main .about-area .client .about-professor h4 {
+  font: normal 500 21px/20px var(--roboto);
+  /* Adjust font styles as needed */
+}
+
+.site-main .about-area .client .about-professor p {
+  font-size: 14px;
+  /* Adjust font size as needed */
+}
+
+/* Fix for owl carousel item styles */
+.site-main .about-area .owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+/* Fix for active dot style in owl carousel */
+.site-main .about-area .owl-carousel .owl-dot.active span {
+  background: var(--primary-color); /* Assuming --primary-color is defined elsewhere */
+  width: 12px;
+  height: 12px;
+  /* Adjust dot styles as needed */
+}
+/* End About Me */
+
+/* Email me area */
+
+.site-main .subscribe-us-area .subscribe{
+  background: url(../img/email1.png) no-repeat;
+  padding: 10rem 0;
+  margin: 3rem auto;
+
+
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+  font: normal 700 30px/ 30px var(--roboto);
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+  width: 400px;
+  padding: 1.5rem 1rem;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: white;
+  font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+  background: whitesmoke;
+  color: #000;
+  padding: .7rem 2rem;
+}
+
+
+
+  
